@@ -1,8 +1,20 @@
+<<<<<<< HEAD
+import React, {useState} from 'react';
+=======
 import React from 'react';
+>>>>>>> ca8b3013e7fe4eaf465f9f96707e1eb04e0341a2
 import './SideNavbar.css';
 import ListItem from './ListItem';
 
 const SideNavbar = () => {
+<<<<<<< HEAD
+    const sidebarValue = useState('Dashboard');
+    const sidebar = val => {
+        
+    };
+
+=======
+>>>>>>> ca8b3013e7fe4eaf465f9f96707e1eb04e0341a2
     const list_items=[
         {title:'Dashboard', class:'fas fa-home fa-lg'},
         {title:'General', class:'fas fa-cog fa-lg'},
