@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import Dashboard from '../pages/Dashboard'
 import General from '../pages/General'
 import Users from '../pages/Users'
@@ -37,6 +38,22 @@ const Details = props => {
             <h1>{props.view}</h1>
             {renderSwitch(props)}
         </div>
+=======
+<<<<<<< HEAD
+import Dashboard from './Dashboard'
+
+const Details = () => {
+    return (
+        <div  style={{flex:"4"}} className="d-flex">
+            <Dashboard/>
+        </div>
+=======
+
+const Details = () => {
+    return (
+        <div style={{ flex: "4" }}>Lorem Ipsum</div>
+>>>>>>> ca8b3013e7fe4eaf465f9f96707e1eb04e0341a2
+>>>>>>> ff81e77a1caa8694b77b56eb6fa8c60839500082
     )
 }
 
