@@ -1,19 +1,27 @@
-import React from 'react';
+import React,{useState} from 'react';
 // import ReactDOM from 'react-dom';
 import './ListItem.css';
+import ShowUsersList from './ShowUsersList';
+// import ShowList from './ShowList';
+// import SubList from './SubList';
 
 const ListItem = (props) => {
+    const [users, setUsers] = useState(0);
+    const [products, setProducts] = useState(0);
     const clickEventHandler = (event) => {
-        // props.item.title;
+        if (props.item.title === "Users") setUsers(!users);
+        else if (props.item.title === "Products") setProducts(!products);
         props.viewHandler(props.item.title);
-        // alert('hi');
     }
     return (
-        <li className="">
-            <button className="py-4 px-3 mr-4 w-100 text-left bg-transparent border-0 text-white" onClick={clickEventHandler}>
-                <i className={props.item.class+' mr-3'} id={props.item.titles}></i>{props.item.title}
-            </button>
-        </li>
+        <>
+            <li className="">
+                <button className="py-4 px-3 mr-4 w-100 text-left bg-transparent border-0 text-white" onClick={clickEventHandler}>
+                    <i className={props.item.class+' mr-3'} id={props.item.title}></i>{props.item.title}
+                </button>
+            </li>
+            {props.item.title == "Users" && users && <ShowUsersList viewHandler={props.viewHandler}/>}
+        </>
     );
 };
 

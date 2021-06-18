@@ -10,7 +10,7 @@ function App() {
     <div style={{height:"100vh"}}>
       <Navbar/>
       <div className="bg-primary text-white container-fluid d-flex">
-        <SideNavbar viewHandler={new_value=>setView(new_value)}/>
+        <SideNavbar viewHandler={new_value => setView(new_value)} view={view}/>
         <Details view={view}/>
       </div>
     </div>

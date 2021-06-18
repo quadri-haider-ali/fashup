@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideNavbar.css';
 import ListItem from './ListItem';
+// import ShowList from './ShowList';
 
 const SideNavbar = props => {
     const list_items=[
@@ -13,6 +14,8 @@ const SideNavbar = props => {
         {title:'Vouchers', class:'fas fa-tags fa-lg'},
         {title:'Web', class:'fas fa-passport fa-lg'},
     ];
+
+    
 
     return (
         <div style={{flex:"0.7"}} className="w-75">
