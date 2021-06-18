@@ -1,4 +1,6 @@
 import React from 'react'
+import Card from '../details/Card';
+import Table from '../details/Table';
 
 const locations = [
     {id:1,name:'a',pincode:'874569',price:569},
@@ -13,10 +15,9 @@ const locations = [
 const General = () => {
     return (
         <div className="h-100">
-            
-            {/* <Card>
-                <Table data={recent_dealers} title={'Recent Dealers'} keyExtractor={0}/>
-            </Card> */}
+            <Card>
+                <Table data={locations} title={'Locations'} keyExtractor={0}/>
+            </Card>
         </div>
     )
 }

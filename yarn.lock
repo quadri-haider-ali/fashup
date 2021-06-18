@@ -7584,14 +7584,11 @@ nan@^2.12.1:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
 
-<<<<<<< HEAD
 nanoid@^2.1.0:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-2.1.11.tgz#ec24b8a758d591561531b4176a01e3ab4f0f0280"
   integrity sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==
 
-=======
->>>>>>> ff81e77a1caa8694b77b56eb6fa8c60839500082
 nanoid@^3.1.20:
   version "3.1.20"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.20.tgz#badc263c6b1dcf14b71efaa85f6ab4c1d6cfc788"
@@ -10148,7 +10145,6 @@ shellwords@^0.1.1:
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
 
-<<<<<<< HEAD
 shortid@^2.2.16:
   version "2.2.16"
   resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.16.tgz#b742b8f0cb96406fd391c76bfc18a67a57fe5608"
@@ -10156,8 +10152,6 @@ shortid@^2.2.16:
   dependencies:
     nanoid "^2.1.0"
 
-=======
->>>>>>> ff81e77a1caa8694b77b56eb6fa8c60839500082
 side-channel@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/side-channel/-/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf"
@@ -11272,14 +11266,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-<<<<<<< HEAD
 validator@^13.6.0:
   version "13.6.0"
   resolved "https://registry.yarnpkg.com/validator/-/validator-13.6.0.tgz#1e71899c14cdc7b2068463cb24c1cc16f6ec7059"
   integrity sha512-gVgKbdbHgtxpRyR8K0O6oFZPhhB5tT1jeEHZR0Znr9Svg03U0+r9DXWMrnRAB+HtCStDQKlaIZm42tVsVjqtjg==
 
-=======
->>>>>>> ff81e77a1caa8694b77b56eb6fa8c60839500082
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
