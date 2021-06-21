@@ -18,11 +18,11 @@ const recent_products = [
 const delivery_agents = [];
 
 const recent_customers = [
-    {id:1,name:'Name#1',address:'address#1',phone:'9876543211'},
-    {id:2,name:'Name#2',address:'address#2',phone:'9876543212'},
-    {id:3,name:'Name#3',address:'address#3',phone:'9876543213'},
-    {id:4,name:'Name#4',address:'address#4',phone:'9876543214'},
-    {id:5,name:'Name#5',address:'address#5',phone:'9876543215'},
+    {id:1,name:'Name#1',address:'address#1',phone:'9999999991'},
+    {id:2,name:'Name#2',address:'address#2',phone:'9999999992'},
+    {id:3,name:'Name#3',address:'address#3',phone:'9999999993'},
+    {id:4,name:'Name#4',address:'address#4',phone:'9999999994'},
+    {id:5,name:'Name#5',address:'address#5',phone:'9999999995'},
 ];
 
 const recent_orders = [
