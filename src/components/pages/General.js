@@ -18,13 +18,16 @@ const locations = [
 // ,action:'fas fa-edit'
 // ,action:'fa fa-trash'
 
-const General = () => {
+const General = props => {
     return (
-        <div className="h-100">
-            <Card>
-                <Table data={locations} title={'Locations'} keyExtractor={0} actionTable={true}/>
-            </Card>
-        </div>
+        <>
+            <h1>{props.view}</h1>
+            <div className="h-100">
+                <Card>
+                    <Table data={locations} title={'Locations'} keyExtractor={0} actionTable={true}/>
+                </Card>
+            </div>
+        </>
     )
 }
 

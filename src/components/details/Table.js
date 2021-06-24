@@ -24,7 +24,7 @@ const Table = props => {
                                     return <td key={value} className="btn d-flex">
                                         {val.map(val_=><a key={val_} href="#" className="btn m-1 btn-default rounded-circle text-secondary bg-light"><i className={'fa '+val_}></i></a>)}
                                     </td>
-                                } else if (validator.isURL(value.toString())) {
+                                } else if (validator.isURL(value.toString()) && !value.toString().includes('@')) {
                                     return <td key={value}><img src={value} alt="" width='200' className='img-thumbnail m-1' /></td>
                                 } else {
                                     return <td key={value}>{value}</td>

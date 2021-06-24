@@ -1,26 +1,23 @@
 import React,{useState} from 'react';
-// import ReactDOM from 'react-dom';
 import './ListItem.css';
 import ShowUsersList from './ShowUsersList';
-// import ShowList from './ShowList';
-// import SubList from './SubList';
 
 const ListItem = (props) => {
     const [users, setUsers] = useState(0);
     const [products, setProducts] = useState(0);
     const clickEventHandler = (event) => {
-        if (props.item.title === "Users") setUsers(!users);
-        else if (props.item.title === "Products") setProducts(!products);
+        if (props.item.title === "Users") return setUsers(!users);
+        else if (props.item.title === "Products") return setProducts(!products);
         props.viewHandler(props.item.title);
     }
     return (
         <>
             <li className="">
-                <button className="py-4 px-3 mr-4 w-100 text-left bg-transparent border-0 text-white" onClick={clickEventHandler}>
+                <button className="py-3 px-3 mr-4 w-100 text-left bg-transparent border-0 text-white" onClick={clickEventHandler}>
                     <i className={props.item.class+' mr-3'} id={props.item.title}></i>{props.item.title}
                 </button>
             </li>
-            {props.item.title == "Users" && users && <ShowUsersList viewHandler={props.viewHandler}/>}
+            {!!users && props.item.title === "Users" && <ShowUsersList viewHandler={props.viewHandler}/>}
         </>
     );
 };

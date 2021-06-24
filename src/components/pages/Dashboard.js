@@ -1,7 +1,6 @@
 import React from 'react';
-// import ReactDOM from "react-dom";
 import Card from '../details/Card';
-import Table from '../details/Table';
+import Table from '../details/Table';   
 
 const recent_dealers = [
     { id: 1, name: "Aone", contact: "7894561230" },
@@ -32,25 +31,28 @@ const recent_orders = [
     {orderID:'ORDER#4',customerName:'Name#4',status:'Pending',total:124},
 ];
 
-const Dashboard = () => {
+const Dashboard = props => {
     return (
-        <div className="h-100">
-            <Card>
-                <Table data={recent_dealers} title={'Recent Dealers'} keyExtractor={0}/>
-            </Card>
-            <Card>
-                <Table data={recent_products} title={'Recent Products'} keyExtractor={0}/>
-            </Card>
-            <Card>
-                <Table data={delivery_agents} title={'Recent Delivery Agents'} keyExtractor={0}/>
-            </Card>
-            <Card>
-                <Table data={recent_customers} title={'Recent Customers'} keyExtractor={0}/>
-            </Card>
-            <Card>
-                <Table data={recent_orders} title={'Recent Orders'} keyExtractor={0}/>
-            </Card>
-        </div>
+        <>
+            <h1>{props.view}</h1>
+            <div className="h-100">
+                <Card>
+                    <Table data={recent_dealers} title={'Recent Dealers'} keyExtractor={0}/>
+                </Card>
+                <Card>
+                    <Table data={recent_products} title={'Recent Products'} keyExtractor={0}/>
+                </Card>
+                <Card>
+                    <Table data={delivery_agents} title={'Recent Delivery Agents'} keyExtractor={0}/>
+                </Card>
+                <Card>
+                    <Table data={recent_customers} title={'Recent Customers'} keyExtractor={0}/>
+                </Card>
+                <Card>
+                    <Table data={recent_orders} title={'Recent Orders'} keyExtractor={0}/>
+                </Card>
+            </div>
+        </>
     )
 }
 
