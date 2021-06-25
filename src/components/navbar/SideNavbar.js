@@ -7,10 +7,10 @@ const SideNavbar = props => {
         {title:'Dashboard', class:'fas fa-home fa-lg'},
         {title:'General', class:'fas fa-cog fa-lg'},
         {title:'Users', class:'fas fa-user-friends fa-lg'},
-        {title:'Products', class:'fas fa-list fa-lg'},
-        {title:'Orders', class:'fas fa-cart-plus fa-lg'},
+        {title:'Product', class:'fas fa-list fa-lg'},
+        {title:'Order', class:'fas fa-cart-plus fa-lg'},
         {title:'Rewards', class:'fas fa-address-card fa-lg'},
-        {title:'Vouchers', class:'fas fa-tags fa-lg'},
+        {title:'Voucher', class:'fas fa-tags fa-lg'},
         {title:'Web', class:'fas fa-passport fa-lg'},
     ];
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import Dashboard from '../pages/Dashboard'
 import General from '../pages/General'
-import Users from '../pages/Users/Users'
-import Products from '../pages/Products/Products'
+// import Users from '../pages/Users/Users'
+// import Products from '../pages/Products/Products'
 import Orders from '../pages/Orders/Orders'
 import Rewards from '../pages/Rewards/Rewards'
 import Vouchers from '../pages/Vouchers/Vouchers'
@@ -11,6 +11,12 @@ import VendorCategories from '../pages/Users/VendorCategories'
 import Vendors from '../pages/Users/Vendors'
 import DeliveryAgents from '../pages/Users/DeliveryAgents'
 import Customers from '../pages/Users/Customers'
+
+import ProductSizes from '../pages/Products/ProductSizes'
+import ProductBrands from '../pages/Products/ProductBrands'
+import ProductCategories from '../pages/Products/ProductCategories'
+import ProductSubcategories from '../pages/Products/ProductSubcategories'
+import Products from '../pages/Products/Products'
 
 const Details = props => {
     const renderSwitch = (props) => {
@@ -22,8 +28,8 @@ const Details = props => {
             // case 'Users':
             //     return ;
                 // return <Users view='Users'/>
-            case 'Products':
-                return <Products view='Products'/>
+            // case 'Products':
+            //     return <Products view='Products'/>
             case 'Orders':
                 return <Orders view='Orders'/>
             case 'Rewards':
@@ -32,6 +38,7 @@ const Details = props => {
                 return <Vouchers view='Vouchers'/>
             case 'Web':
                 return <Web view='Web'/>
+            // Users
             case 'Vendor Categories':
                 return <VendorCategories view='Vendor Categories'/>
             case 'Vendors':
@@ -40,8 +47,19 @@ const Details = props => {
                 return <DeliveryAgents view='Delivery Agents'/>
             case 'Customers':
                 return <Customers view='Customers'/>
+            // Products
+            case 'Product Sizes':
+                return <ProductSizes view='Product Sizes'/>
+            case 'Product Brands':
+                return <ProductBrands view='Product Brands'/>
+            case 'Product Categories':
+                return <ProductCategories view='Product Categories'/>
+            case 'Product Subcategories':
+                return <ProductSubcategories view='Product Subcategories'/>
+            case 'Products':
+                return <Products view='Products'/>
             case 'default': 
-                return <Dashboard view='Dashboard'/>
+            return <Dashboard view='Dashboard'/>
         }
     }
     return (

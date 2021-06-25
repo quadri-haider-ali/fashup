@@ -7,7 +7,7 @@ const ListItem = (props) => {
     const [products, setProducts] = useState(0);
     const clickEventHandler = (event) => {
         if (props.item.title === "Users") return setUsers(!users);
-        else if (props.item.title === "Products") return setProducts(!products);
+        else if (props.item.title === "Product") return setProducts(!products);
         props.viewHandler(props.item.title);
     }
     return (
@@ -17,7 +17,8 @@ const ListItem = (props) => {
                     <i className={props.item.class+' mr-3'} id={props.item.title}></i>{props.item.title}
                 </button>
             </li>
-            {!!users && props.item.title === "Users" && <ShowUsersList viewHandler={props.viewHandler}/>}
+            {!!users && props.item.title === "Users" && <ShowUsersList title={props.item.title} viewHandler={props.viewHandler}/>}
+            {!!products && props.item.title==="Product" && <ShowUsersList title={props.item.title} viewHandler={props.viewHandler}/>}
         </>
     );
 };
