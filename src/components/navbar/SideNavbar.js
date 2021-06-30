@@ -9,7 +9,7 @@ const SideNavbar = props => {
         {title:'Users', class:'fas fa-user-friends fa-lg'},
         {title:'Product', class:'fas fa-list fa-lg'},
         {title:'Order', class:'fas fa-cart-plus fa-lg'},
-        {title:'Rewards', class:'fas fa-address-card fa-lg'},
+        {title:'Reward', class:'fas fa-address-card fa-lg'},
         {title:'Voucher', class:'fas fa-tags fa-lg'},
         {title:'Web', class:'fas fa-passport fa-lg'},
     ];

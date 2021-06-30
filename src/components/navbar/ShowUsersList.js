@@ -23,6 +23,7 @@ const UsersSubList = props => {
         {title:'Order Returns',class:''},
     ];
     const rewards_items = [
+        {title:'Rewards',class:''},
         {title:'Coin',class:''},
         {title:'Coin Value',class:''},
         {title:'Reward History',class:''},
@@ -45,7 +46,7 @@ const UsersSubList = props => {
             {props.title==="Users" && users_items.map(item => <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
             {props.title==="Product" && product_items.map(item=> <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
             {props.title==="Order" && order_items.map(item=> <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
-            {props.title==="Rewards" && rewards_items.map(item=> <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
+            {props.title==="Reward" && rewards_items.map(item=> <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
             {props.title==="Voucher" && voucher_items.map(item=> <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
             {props.title==="Web" && web_items.map(item=> <ListItem key={item.title} item={item} viewHandler={props.viewHandler}/>)}
         </ul>
